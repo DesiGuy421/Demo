@@ -7,44 +7,49 @@
 //
 
 #import "WMLAppDelegate.h"
+
+#import "WMLConstants.h"
+#import "WMLRequestor.h"
+#import "WMLProductListController.h"
+#import "WMLDataManager.h"
+
+#import "WMLProductListViewController.h"
 #import "WMLProductDetailsViewController.h"
 
+static NSString * const WMLBaseURL = @"https://walmartlabs-test.appspot.com/_ah/api/walmart/";
+
 @interface WMLAppDelegate () <UISplitViewControllerDelegate>
+
+@property (nonatomic, strong) WMLRequestor *requestor;
+@property (nonatomic, strong) WMLDataManager *dataManager;
 
 @end
 
 @implementation WMLAppDelegate
 
+static NSString *isNetworkActivityInProgressKey = @"isNetworkActivityInProgress";
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.dataManager = [[WMLDataManager alloc] initWithModelName:@"Model" storeType:NSInMemoryStoreType documentPath:nil];
+    
+    NSURL *baseURL = [NSURL URLWithString:WMLBaseURL];
+    NSDictionary *userInfo = @{WMLManagedObjectContextUserInfoKey : self.dataManager.managedObjectContext};
+    self.requestor = [[WMLRequestor alloc] initWithBaseURL:baseURL userInfo:userInfo];
+    WMLProductListController *controller = [[WMLProductListController alloc] initWithRequestor:self.requestor];
+    
+    [self.requestor addObserver:self forKeyPath:isNetworkActivityInProgressKey options:NSKeyValueObservingOptionNew context:&isNetworkActivityInProgressKey];
+    
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    
+    WMLProductListViewController *productListViewController = (WMLProductListViewController *)[[splitViewController.viewControllers firstObject] topViewController];
+    productListViewController.productListController = controller;
+    
     return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 #pragma mark - Split view
@@ -55,6 +60,16 @@
         return YES;
     } else {
         return NO;
+    }
+}
+
+#pragma mark - KVO
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+{
+    if (context == &isNetworkActivityInProgressKey)
+    {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:self.requestor.isNetworkActivityInProgress];
     }
 }
 

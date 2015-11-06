@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="Product" representedClassName="WMLProduct" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inStock" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="longDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productImageURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reviewCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reviewRating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="shortDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeInserted" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="productResponse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductResponse" inverseName="products" inverseEntity="ProductResponse" syncable="YES"/>
+    </entity>
+    <entity name="ProductResponse" representedClassName="WMLProductResponse" syncable="YES">
+        <attribute name="pageNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageSize" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeInserted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="totalProducts" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="productResponse" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Product" positionX="207" positionY="-18" width="128" height="223"/>
+        <element name="ProductResponse" positionX="-54" positionY="63" width="128" height="133"/>
+    </elements>
+</model>

@@ -9,11 +9,28 @@
 /* Begin PBXBuildFile section */
 		C86C33BE1BEC6A02001B2ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33BD1BEC6A02001B2ECD /* main.m */; };
 		C86C33C11BEC6A02001B2ECD /* WMLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C01BEC6A02001B2ECD /* WMLAppDelegate.m */; };
-		C86C33C41BEC6A02001B2ECD /* WMLProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C31BEC6A02001B2ECD /* WMLProductsListViewController.m */; };
+		C86C33C41BEC6A02001B2ECD /* WMLProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C31BEC6A02001B2ECD /* WMLProductListViewController.m */; };
 		C86C33C71BEC6A02001B2ECD /* WMLProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */; };
 		C86C33CA1BEC6A02001B2ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86C33C81BEC6A02001B2ECD /* Main.storyboard */; };
 		C86C33CC1BEC6A02001B2ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */; };
 		C86C33CF1BEC6A02001B2ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */; };
+		C86C33DD1BEC6BAE001B2ECD /* WMLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33D81BEC6BAE001B2ECD /* WMLObject.m */; };
+		C86C33DE1BEC6BAE001B2ECD /* WMLRequestDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33DA1BEC6BAE001B2ECD /* WMLRequestDescriptor.m */; };
+		C86C33DF1BEC6BAE001B2ECD /* WMLRequestor.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33DC1BEC6BAE001B2ECD /* WMLRequestor.m */; };
+		C86C33E81BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33E31BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.m */; };
+		C86C33E91BEC6EB3001B2ECD /* WMLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33E51BEC6EB3001B2ECD /* WMLDataManager.m */; };
+		C86C33EA1BEC6EB3001B2ECD /* WMLManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33E71BEC6EB3001B2ECD /* WMLManagedObject.m */; };
+		C86C33EE1BEC71B4001B2ECD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C86C33EC1BEC71B4001B2ECD /* Model.xcdatamodeld */; };
+		C86C33F31BEC74ED001B2ECD /* _WMLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33F01BEC74ED001B2ECD /* _WMLProduct.m */; };
+		C86C33F41BEC74ED001B2ECD /* WMLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33F21BEC74ED001B2ECD /* WMLProduct.m */; };
+		C86C33F81BEC783A001B2ECD /* WMLProductsRequestDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33F71BEC783A001B2ECD /* WMLProductsRequestDescriptor.m */; };
+		C86C33FF1BEC80EA001B2ECD /* _WMLProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33FE1BEC80EA001B2ECD /* _WMLProductResponse.m */; };
+		C86C34021BEC80F6001B2ECD /* WMLProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C34011BEC80F6001B2ECD /* WMLProductResponse.m */; };
+		C86C34051BEC85D8001B2ECD /* WMLProductListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C34041BEC85D8001B2ECD /* WMLProductListController.m */; };
+		C86C34071BEC8E2A001B2ECD /* WMLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C34061BEC8E29001B2ECD /* WMLConstants.m */; };
+		C86C34091BEC95B3001B2ECD /* WMLProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86C34081BEC95B3001B2ECD /* WMLProductListViewController.xib */; };
+		C86C340D1BEC9695001B2ECD /* WMLProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C340B1BEC9695001B2ECD /* WMLProductCollectionViewCell.m */; };
+		C86C340E1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86C340C1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +38,45 @@
 		C86C33BD1BEC6A02001B2ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C86C33BF1BEC6A02001B2ECD /* WMLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLAppDelegate.h; sourceTree = "<group>"; };
 		C86C33C01BEC6A02001B2ECD /* WMLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLAppDelegate.m; sourceTree = "<group>"; };
-		C86C33C21BEC6A02001B2ECD /* WMLProductsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLProductsListViewController.h; sourceTree = "<group>"; };
-		C86C33C31BEC6A02001B2ECD /* WMLProductsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLProductsListViewController.m; sourceTree = "<group>"; };
+		C86C33C21BEC6A02001B2ECD /* WMLProductListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLProductListViewController.h; sourceTree = "<group>"; };
+		C86C33C31BEC6A02001B2ECD /* WMLProductListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLProductListViewController.m; sourceTree = "<group>"; };
 		C86C33C51BEC6A02001B2ECD /* WMLProductDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLProductDetailsViewController.h; sourceTree = "<group>"; };
 		C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLProductDetailsViewController.m; sourceTree = "<group>"; };
 		C86C33C91BEC6A02001B2ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86C33CE1BEC6A02001B2ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C86C33D01BEC6A02001B2ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86C33D71BEC6BAE001B2ECD /* WMLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLObject.h; sourceTree = "<group>"; };
+		C86C33D81BEC6BAE001B2ECD /* WMLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLObject.m; sourceTree = "<group>"; };
+		C86C33D91BEC6BAE001B2ECD /* WMLRequestDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLRequestDescriptor.h; sourceTree = "<group>"; };
+		C86C33DA1BEC6BAE001B2ECD /* WMLRequestDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLRequestDescriptor.m; sourceTree = "<group>"; };
+		C86C33DB1BEC6BAE001B2ECD /* WMLRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLRequestor.h; sourceTree = "<group>"; };
+		C86C33DC1BEC6BAE001B2ECD /* WMLRequestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLRequestor.m; sourceTree = "<group>"; };
+		C86C33E21BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+QLIAdditions.h"; sourceTree = "<group>"; };
+		C86C33E31BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+QLIAdditions.m"; sourceTree = "<group>"; };
+		C86C33E41BEC6EB3001B2ECD /* WMLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLDataManager.h; sourceTree = "<group>"; };
+		C86C33E51BEC6EB3001B2ECD /* WMLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLDataManager.m; sourceTree = "<group>"; };
+		C86C33E61BEC6EB3001B2ECD /* WMLManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLManagedObject.h; sourceTree = "<group>"; };
+		C86C33E71BEC6EB3001B2ECD /* WMLManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLManagedObject.m; sourceTree = "<group>"; };
+		C86C33ED1BEC71B4001B2ECD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C86C33EF1BEC74ED001B2ECD /* _WMLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _WMLProduct.h; sourceTree = "<group>"; };
+		C86C33F01BEC74ED001B2ECD /* _WMLProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _WMLProduct.m; sourceTree = "<group>"; };
+		C86C33F11BEC74ED001B2ECD /* WMLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLProduct.h; sourceTree = "<group>"; };
+		C86C33F21BEC74ED001B2ECD /* WMLProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLProduct.m; sourceTree = "<group>"; };
+		C86C33F61BEC783A001B2ECD /* WMLProductsRequestDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLProductsRequestDescriptor.h; sourceTree = "<group>"; };
+		C86C33F71BEC783A001B2ECD /* WMLProductsRequestDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLProductsRequestDescriptor.m; sourceTree = "<group>"; };
+		C86C33F91BEC7B37001B2ECD /* WMLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLConstants.h; sourceTree = "<group>"; };
+		C86C33FD1BEC80EA001B2ECD /* _WMLProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _WMLProductResponse.h; sourceTree = "<group>"; };
+		C86C33FE1BEC80EA001B2ECD /* _WMLProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _WMLProductResponse.m; sourceTree = "<group>"; };
+		C86C34001BEC80F6001B2ECD /* WMLProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLProductResponse.h; sourceTree = "<group>"; };
+		C86C34011BEC80F6001B2ECD /* WMLProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLProductResponse.m; sourceTree = "<group>"; };
+		C86C34031BEC85D8001B2ECD /* WMLProductListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLProductListController.h; sourceTree = "<group>"; };
+		C86C34041BEC85D8001B2ECD /* WMLProductListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLProductListController.m; sourceTree = "<group>"; };
+		C86C34061BEC8E29001B2ECD /* WMLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLConstants.m; sourceTree = "<group>"; };
+		C86C34081BEC95B3001B2ECD /* WMLProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMLProductListViewController.xib; sourceTree = "<group>"; };
+		C86C340A1BEC9695001B2ECD /* WMLProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLProductCollectionViewCell.h; sourceTree = "<group>"; };
+		C86C340B1BEC9695001B2ECD /* WMLProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLProductCollectionViewCell.m; sourceTree = "<group>"; };
+		C86C340C1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMLProductCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +109,18 @@
 		C86C33BB1BEC6A02001B2ECD /* WalmartDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C86C33D61BEC6BA2001B2ECD /* Base Networking+CoreData */,
+				C86C33EB1BEC7190001B2ECD /* Model */,
 				C86C33BF1BEC6A02001B2ECD /* WMLAppDelegate.h */,
 				C86C33C01BEC6A02001B2ECD /* WMLAppDelegate.m */,
-				C86C33C21BEC6A02001B2ECD /* WMLProductsListViewController.h */,
-				C86C33C31BEC6A02001B2ECD /* WMLProductsListViewController.m */,
+				C86C34031BEC85D8001B2ECD /* WMLProductListController.h */,
+				C86C34041BEC85D8001B2ECD /* WMLProductListController.m */,
+				C86C33C21BEC6A02001B2ECD /* WMLProductListViewController.h */,
+				C86C33C31BEC6A02001B2ECD /* WMLProductListViewController.m */,
+				C86C34081BEC95B3001B2ECD /* WMLProductListViewController.xib */,
+				C86C340A1BEC9695001B2ECD /* WMLProductCollectionViewCell.h */,
+				C86C340B1BEC9695001B2ECD /* WMLProductCollectionViewCell.m */,
+				C86C340C1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib */,
 				C86C33C51BEC6A02001B2ECD /* WMLProductDetailsViewController.h */,
 				C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */,
 				C86C33C81BEC6A02001B2ECD /* Main.storyboard */,
@@ -82,6 +138,53 @@
 				C86C33BD1BEC6A02001B2ECD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C86C33D61BEC6BA2001B2ECD /* Base Networking+CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C86C33E21BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.h */,
+				C86C33E31BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.m */,
+				C86C33E41BEC6EB3001B2ECD /* WMLDataManager.h */,
+				C86C33E51BEC6EB3001B2ECD /* WMLDataManager.m */,
+				C86C33E61BEC6EB3001B2ECD /* WMLManagedObject.h */,
+				C86C33E71BEC6EB3001B2ECD /* WMLManagedObject.m */,
+				C86C33D71BEC6BAE001B2ECD /* WMLObject.h */,
+				C86C33D81BEC6BAE001B2ECD /* WMLObject.m */,
+				C86C33D91BEC6BAE001B2ECD /* WMLRequestDescriptor.h */,
+				C86C33DA1BEC6BAE001B2ECD /* WMLRequestDescriptor.m */,
+				C86C33DB1BEC6BAE001B2ECD /* WMLRequestor.h */,
+				C86C33DC1BEC6BAE001B2ECD /* WMLRequestor.m */,
+			);
+			name = "Base Networking+CoreData";
+			sourceTree = "<group>";
+		};
+		C86C33EB1BEC7190001B2ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86C33F91BEC7B37001B2ECD /* WMLConstants.h */,
+				C86C34061BEC8E29001B2ECD /* WMLConstants.m */,
+				C86C33EC1BEC71B4001B2ECD /* Model.xcdatamodeld */,
+				C86C33F51BEC74F7001B2ECD /* Generated */,
+				C86C34001BEC80F6001B2ECD /* WMLProductResponse.h */,
+				C86C34011BEC80F6001B2ECD /* WMLProductResponse.m */,
+				C86C33F11BEC74ED001B2ECD /* WMLProduct.h */,
+				C86C33F21BEC74ED001B2ECD /* WMLProduct.m */,
+				C86C33F61BEC783A001B2ECD /* WMLProductsRequestDescriptor.h */,
+				C86C33F71BEC783A001B2ECD /* WMLProductsRequestDescriptor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C86C33F51BEC74F7001B2ECD /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				C86C33FD1BEC80EA001B2ECD /* _WMLProductResponse.h */,
+				C86C33FE1BEC80EA001B2ECD /* _WMLProductResponse.m */,
+				C86C33EF1BEC74ED001B2ECD /* _WMLProduct.h */,
+				C86C33F01BEC74ED001B2ECD /* _WMLProduct.m */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +247,8 @@
 			files = (
 				C86C33CF1BEC6A02001B2ECD /* LaunchScreen.storyboard in Resources */,
 				C86C33CC1BEC6A02001B2ECD /* Assets.xcassets in Resources */,
+				C86C340E1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib in Resources */,
+				C86C34091BEC95B3001B2ECD /* WMLProductListViewController.xib in Resources */,
 				C86C33CA1BEC6A02001B2ECD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,9 +261,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C86C33C11BEC6A02001B2ECD /* WMLAppDelegate.m in Sources */,
-				C86C33C41BEC6A02001B2ECD /* WMLProductsListViewController.m in Sources */,
+				C86C33DD1BEC6BAE001B2ECD /* WMLObject.m in Sources */,
+				C86C34071BEC8E2A001B2ECD /* WMLConstants.m in Sources */,
+				C86C33E81BEC6EB3001B2ECD /* NSManagedObjectContext+QLIAdditions.m in Sources */,
+				C86C34051BEC85D8001B2ECD /* WMLProductListController.m in Sources */,
+				C86C33F81BEC783A001B2ECD /* WMLProductsRequestDescriptor.m in Sources */,
+				C86C33C41BEC6A02001B2ECD /* WMLProductListViewController.m in Sources */,
+				C86C33F31BEC74ED001B2ECD /* _WMLProduct.m in Sources */,
+				C86C33E91BEC6EB3001B2ECD /* WMLDataManager.m in Sources */,
+				C86C33EA1BEC6EB3001B2ECD /* WMLManagedObject.m in Sources */,
+				C86C33DE1BEC6BAE001B2ECD /* WMLRequestDescriptor.m in Sources */,
+				C86C33FF1BEC80EA001B2ECD /* _WMLProductResponse.m in Sources */,
+				C86C33F41BEC74ED001B2ECD /* WMLProduct.m in Sources */,
+				C86C33DF1BEC6BAE001B2ECD /* WMLRequestor.m in Sources */,
 				C86C33BE1BEC6A02001B2ECD /* main.m in Sources */,
+				C86C340D1BEC9695001B2ECD /* WMLProductCollectionViewCell.m in Sources */,
+				C86C33EE1BEC71B4001B2ECD /* Model.xcdatamodeld in Sources */,
 				C86C33C71BEC6A02001B2ECD /* WMLProductDetailsViewController.m in Sources */,
+				C86C34021BEC80F6001B2ECD /* WMLProductResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +429,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C86C33EC1BEC71B4001B2ECD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C86C33ED1BEC71B4001B2ECD /* Model.xcdatamodel */,
+			);
+			currentVersion = C86C33ED1BEC71B4001B2ECD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C86C33B11BEC6A02001B2ECD /* Project object */;
 }
