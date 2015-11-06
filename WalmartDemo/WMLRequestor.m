@@ -54,7 +54,17 @@
     self.networkRequestCount++;
     
     __weak typeof(self) weakSelf = self;
-    NSURL *requestURL = [_baseURL URLByAppendingPathComponent:[requestDescriptor URLPath]];
+    NSURL *baseURL = _baseURL;
+    NSURL *requestURL = nil;
+    if (!baseURL)
+    {
+        requestURL = [NSURL URLWithString:[requestDescriptor URLPath]];
+    }
+    else
+    {
+        requestURL = [baseURL URLByAppendingPathComponent:[requestDescriptor URLPath]];        
+    }
+
     NSMutableURLRequest *URLRequest = [NSMutableURLRequest requestWithURL:requestURL];
     NSURLSessionDataTask *dataTask = [self.URLSession dataTaskWithRequest:URLRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
     {

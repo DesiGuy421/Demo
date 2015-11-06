@@ -31,6 +31,10 @@
 		C86C34091BEC95B3001B2ECD /* WMLProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86C34081BEC95B3001B2ECD /* WMLProductListViewController.xib */; };
 		C86C340D1BEC9695001B2ECD /* WMLProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C340B1BEC9695001B2ECD /* WMLProductCollectionViewCell.m */; };
 		C86C340E1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86C340C1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib */; };
+		C86C34111BECB012001B2ECD /* WMLImageRequestDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C34101BECB012001B2ECD /* WMLImageRequestDescriptor.m */; };
+		C86C34151BECB8B3001B2ECD /* WMLCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C34131BECB8B3001B2ECD /* WMLCollectionReusableView.m */; };
+		C86C34161BECB8B3001B2ECD /* WMLCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86C34141BECB8B3001B2ECD /* WMLCollectionReusableView.xib */; };
+		C86C34181BECBCE7001B2ECD /* WMLProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86C34171BECBCE7001B2ECD /* WMLProductDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +81,12 @@
 		C86C340A1BEC9695001B2ECD /* WMLProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLProductCollectionViewCell.h; sourceTree = "<group>"; };
 		C86C340B1BEC9695001B2ECD /* WMLProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLProductCollectionViewCell.m; sourceTree = "<group>"; };
 		C86C340C1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMLProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		C86C340F1BECB012001B2ECD /* WMLImageRequestDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLImageRequestDescriptor.h; sourceTree = "<group>"; };
+		C86C34101BECB012001B2ECD /* WMLImageRequestDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLImageRequestDescriptor.m; sourceTree = "<group>"; };
+		C86C34121BECB8B3001B2ECD /* WMLCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLCollectionReusableView.h; sourceTree = "<group>"; };
+		C86C34131BECB8B3001B2ECD /* WMLCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLCollectionReusableView.m; sourceTree = "<group>"; };
+		C86C34141BECB8B3001B2ECD /* WMLCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMLCollectionReusableView.xib; sourceTree = "<group>"; };
+		C86C34171BECBCE7001B2ECD /* WMLProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMLProductDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +128,15 @@
 				C86C33C21BEC6A02001B2ECD /* WMLProductListViewController.h */,
 				C86C33C31BEC6A02001B2ECD /* WMLProductListViewController.m */,
 				C86C34081BEC95B3001B2ECD /* WMLProductListViewController.xib */,
+				C86C34121BECB8B3001B2ECD /* WMLCollectionReusableView.h */,
+				C86C34131BECB8B3001B2ECD /* WMLCollectionReusableView.m */,
+				C86C34141BECB8B3001B2ECD /* WMLCollectionReusableView.xib */,
 				C86C340A1BEC9695001B2ECD /* WMLProductCollectionViewCell.h */,
 				C86C340B1BEC9695001B2ECD /* WMLProductCollectionViewCell.m */,
 				C86C340C1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib */,
 				C86C33C51BEC6A02001B2ECD /* WMLProductDetailsViewController.h */,
 				C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */,
+				C86C34171BECBCE7001B2ECD /* WMLProductDetailsViewController.xib */,
 				C86C33C81BEC6A02001B2ECD /* Main.storyboard */,
 				C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */,
 				C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */,
@@ -172,6 +186,8 @@
 				C86C33F21BEC74ED001B2ECD /* WMLProduct.m */,
 				C86C33F61BEC783A001B2ECD /* WMLProductsRequestDescriptor.h */,
 				C86C33F71BEC783A001B2ECD /* WMLProductsRequestDescriptor.m */,
+				C86C340F1BECB012001B2ECD /* WMLImageRequestDescriptor.h */,
+				C86C34101BECB012001B2ECD /* WMLImageRequestDescriptor.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -246,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C86C33CF1BEC6A02001B2ECD /* LaunchScreen.storyboard in Resources */,
+				C86C34181BECBCE7001B2ECD /* WMLProductDetailsViewController.xib in Resources */,
 				C86C33CC1BEC6A02001B2ECD /* Assets.xcassets in Resources */,
+				C86C34161BECB8B3001B2ECD /* WMLCollectionReusableView.xib in Resources */,
 				C86C340E1BEC9695001B2ECD /* WMLProductCollectionViewCell.xib in Resources */,
 				C86C34091BEC95B3001B2ECD /* WMLProductListViewController.xib in Resources */,
 				C86C33CA1BEC6A02001B2ECD /* Main.storyboard in Resources */,
@@ -269,6 +287,7 @@
 				C86C33C41BEC6A02001B2ECD /* WMLProductListViewController.m in Sources */,
 				C86C33F31BEC74ED001B2ECD /* _WMLProduct.m in Sources */,
 				C86C33E91BEC6EB3001B2ECD /* WMLDataManager.m in Sources */,
+				C86C34151BECB8B3001B2ECD /* WMLCollectionReusableView.m in Sources */,
 				C86C33EA1BEC6EB3001B2ECD /* WMLManagedObject.m in Sources */,
 				C86C33DE1BEC6BAE001B2ECD /* WMLRequestDescriptor.m in Sources */,
 				C86C33FF1BEC80EA001B2ECD /* _WMLProductResponse.m in Sources */,
@@ -277,6 +296,7 @@
 				C86C33BE1BEC6A02001B2ECD /* main.m in Sources */,
 				C86C340D1BEC9695001B2ECD /* WMLProductCollectionViewCell.m in Sources */,
 				C86C33EE1BEC71B4001B2ECD /* Model.xcdatamodeld in Sources */,
+				C86C34111BECB012001B2ECD /* WMLImageRequestDescriptor.m in Sources */,
 				C86C33C71BEC6A02001B2ECD /* WMLProductDetailsViewController.m in Sources */,
 				C86C34021BEC80F6001B2ECD /* WMLProductResponse.m in Sources */,
 			);

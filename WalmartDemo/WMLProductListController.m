@@ -52,16 +52,22 @@
     return [self.lastProductResponse.pageNumber integerValue];
 }
 
+- (NSInteger)totalProducts
+{
+    return [self.lastProductResponse.totalProducts integerValue];
+}
+
 - (void)startRequestForNextPageOfProductsWithCompletion:(WMLProductListCompletion)completion
 {
     if (self.lastProductResponse)
     {
         self.requestDescriptor.pageNumber = [self.lastProductResponse.pageNumber integerValue] + 1;
     }
-    
+    self.requestInProgress = YES;
     __weak typeof(self) weakSelf = self;
     [self.requestor startRequestWithDescriptor:self.requestDescriptor completion:^(id responseObject, NSError *error)
     {
+        weakSelf.requestInProgress = NO;
         weakSelf.lastProductResponse = responseObject;
         dispatch_async(dispatch_get_main_queue(), ^
         {

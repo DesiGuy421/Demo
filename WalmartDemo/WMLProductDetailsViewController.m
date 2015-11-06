@@ -8,39 +8,61 @@
 
 #import "WMLProductDetailsViewController.h"
 
+
 @interface WMLProductDetailsViewController ()
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UIStackView *stackView;
 
 @end
 
 @implementation WMLProductDetailsViewController
 
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-            
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView {
-    // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+
+    [self populateViewFromProduct:self.product];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)populateViewFromProduct:(WMLProduct *)product
+{
+    self.nameLabel.text = product.name;
+    self.priceLabel.text = product.price;
+    self.ratingLabel.text = [product ratingText];
+    self.shortDescriptionLabel.attributedText = [self attributedStringForHTMLString:product.shortDetails];
+    self.longDescriptionLabel.attributedText = [self attributedStringForHTMLString:product.longDetails];
+    self.productImageView.image = self.productImage;
+}
+
+- (void)setProduct:(WMLProduct *)product
+{
+    _product = product;
+    
+    [self populateViewFromProduct:product];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    dispatch_async(dispatch_get_main_queue(), ^
+    {
+        CGSize size = self.scrollView.contentSize;
+        size.height = self.stackView.frame.size.height;
+        size.width = self.scrollView.bounds.size.width;
+        self.scrollView.contentSize = size;
+    });
+}
+
+- (NSAttributedString *)attributedStringForHTMLString:(NSString *)htmlString
+{
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUTF8StringEncoding]
+                                                                            options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                                                                                      NSCharacterEncodingDocumentAttribute: @(NSUTF8StringEncoding)}
+                                                                 documentAttributes:nil error:nil];
+    return attributedString;
+    
 }
 
 @end

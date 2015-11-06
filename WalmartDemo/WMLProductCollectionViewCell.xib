@@ -3,39 +3,38 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WMLProductCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="220"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="280"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="240" height="220"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="280"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B45-Ts-hrC">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="133"/>
-                        <color key="backgroundColor" red="0.60423431426351604" green="0.82703237733085988" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B45-Ts-hrC">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="166.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.67273730040000002" blue="0.92882227900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="133" id="8a3-lN-iQb"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="133" id="Qz3-Df-cbA"/>
-                            <constraint firstAttribute="width" constant="240" id="R8V-A2-qzi"/>
+                            <constraint firstAttribute="width" secondItem="B45-Ts-hrC" secondAttribute="height" multiplier="240:133" id="WJ6-1F-L3e"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-dQ-acP">
-                        <rect key="frame" x="8" y="141" width="224" height="19.5"/>
+                        <rect key="frame" x="8" y="174" width="284" height="46"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-C1-yJG">
-                        <rect key="frame" x="8" y="168" width="35.5" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-C1-yJG">
+                        <rect key="frame" x="8" y="228" width="35.5" height="17"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb8-Bp-uTr">
-                        <rect key="frame" x="8" y="195" width="35.5" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb8-Bp-uTr">
+                        <rect key="frame" x="8" y="255" width="35.5" height="17"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -57,13 +56,14 @@
                 <constraint firstAttribute="bottom" secondItem="yb8-Bp-uTr" secondAttribute="bottom" constant="8" id="mqW-3O-QjG"/>
                 <constraint firstItem="1Ba-dQ-acP" firstAttribute="top" secondItem="B45-Ts-hrC" secondAttribute="bottom" constant="8" id="qQ7-9D-c0e"/>
             </constraints>
-            <size key="customSize" width="241" height="219"/>
+            <size key="customSize" width="273" height="274"/>
             <connections>
                 <outlet property="nameLabel" destination="1Ba-dQ-acP" id="5O7-qu-I9s"/>
                 <outlet property="priceLabel" destination="l5g-C1-yJG" id="H2k-CO-vmE"/>
+                <outlet property="productImageView" destination="B45-Ts-hrC" id="j46-c1-3hf"/>
                 <outlet property="ratingLabel" destination="yb8-Bp-uTr" id="W5H-jK-LSv"/>
             </connections>
-            <point key="canvasLocation" x="344" y="489"/>
+            <point key="canvasLocation" x="231" y="443"/>
         </collectionViewCell>
     </objects>
 </document>

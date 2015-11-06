@@ -27,4 +27,6 @@ typedef void(^WMLProductListCompletion)();
 
 - (void)startRequestForNextPageOfProductsWithCompletion:(WMLProductListCompletion)completion;
 
+@property (nonatomic, assign) BOOL requestInProgress;
+
 @end

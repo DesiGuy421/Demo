@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WMLProductListViewController">
             <connections>
                 <outlet property="collectionView" destination="BTd-sC-mXg" id="hAC-lA-0c5"/>
+                <outlet property="reusableView" destination="8MJ-a2-m8E" id="9a7-I0-hIa"/>
                 <outlet property="view" destination="iN0-l3-epB" id="mZD-4c-iJ5"/>
             </connections>
         </placeholder>
@@ -41,5 +42,20 @@
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
         </view>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8MJ-a2-m8E">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WhE-pF-xqk">
+                    <rect key="frame" x="142" y="6" width="37" height="37"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="WhE-pF-xqk" firstAttribute="centerY" secondItem="8MJ-a2-m8E" secondAttribute="centerY" id="pVq-sS-7El"/>
+                <constraint firstItem="WhE-pF-xqk" firstAttribute="centerX" secondItem="8MJ-a2-m8E" secondAttribute="centerX" id="t9Q-tY-fe9"/>
+            </constraints>
+            <point key="canvasLocation" x="109" y="903"/>
+        </collectionReusableView>
     </objects>
 </document>

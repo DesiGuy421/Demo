@@ -13,6 +13,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *nameLabel;
 @property (nonatomic, strong) IBOutlet UILabel *priceLabel;
 @property (nonatomic, strong) IBOutlet UILabel *ratingLabel;
-@property (nonatomic, strong) IBOutlet UILabel *descriptionLabel;
+@property (nonatomic, strong) IBOutlet UIImageView *productImageView;
 
 @end
