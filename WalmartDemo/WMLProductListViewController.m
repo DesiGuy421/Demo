@@ -71,13 +71,6 @@ static CGFloat WMLCellAspectRatio = 240.0/220;
     }];
 }
 
-#pragma mark - UIControl methods
-
-- (IBAction)loadMoreTapped:(id)sender
-{
-    [self.productListController startRequestForNextPageOfProductsWithCompletion:NULL];
-}
-
 #pragma mark - UIViewController methods
 
 - (void)viewDidLoad {

@@ -1,5 +1,5 @@
 //
-//  INCManagedObject.h
+//  WMLManagedObject.h
 //  Aqeel Gunja
 //
 //  Created by Aqeel Gunja on 12/15/14.

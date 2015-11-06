@@ -50,13 +50,7 @@
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Products" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="WMLProductListViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Products" id="Zdf-7t-Un8">
-                        <barButtonItem key="rightBarButtonItem" title="Load more" id="BZH-yz-1a6">
-                            <connections>
-                                <action selector="loadMoreTapped:" destination="7bK-jq-Zjz" id="OWG-uC-4Rr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Products" id="Zdf-7t-Un8"/>
                     <connections>
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="8qW-4v-Quz"/>
                     </connections>

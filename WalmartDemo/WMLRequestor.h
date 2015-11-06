@@ -1,5 +1,5 @@
 //
-//  INCRequestor.h
+//  WMLRequestor.h
 //  Aqeel Gunja
 //
 //  Created by Aqeel Gunja on 12/16/14.
