@@ -6,13 +6,13 @@
 //  Copyright © 2015 Aqeel Gunja. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "WMLProductDetailsViewController.h"
 
-@interface DetailViewController ()
+@interface WMLProductDetailsViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation WMLProductDetailsViewController
 
 #pragma mark - Managing the detail item
 

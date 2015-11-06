@@ -6,15 +6,15 @@
 //  Copyright © 2015 Aqeel Gunja. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "WMLProductsListViewController.h"
+#import "WMLProductDetailsViewController.h"
 
-@interface MasterViewController ()
+@interface WMLProductsListViewController ()
 
 @property NSMutableArray *objects;
 @end
 
-@implementation MasterViewController
+@implementation WMLProductsListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,7 +51,7 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = self.objects[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        WMLProductDetailsViewController *controller = (WMLProductDetailsViewController *)[[segue destinationViewController] topViewController];
         [controller setDetailItem:object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;

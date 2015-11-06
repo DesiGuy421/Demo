@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C86C33BE1BEC6A02001B2ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33BD1BEC6A02001B2ECD /* main.m */; };
-		C86C33C11BEC6A02001B2ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C01BEC6A02001B2ECD /* AppDelegate.m */; };
-		C86C33C41BEC6A02001B2ECD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C31BEC6A02001B2ECD /* MasterViewController.m */; };
-		C86C33C71BEC6A02001B2ECD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C61BEC6A02001B2ECD /* DetailViewController.m */; };
+		C86C33C11BEC6A02001B2ECD /* WMLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C01BEC6A02001B2ECD /* WMLAppDelegate.m */; };
+		C86C33C41BEC6A02001B2ECD /* WMLProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C31BEC6A02001B2ECD /* WMLProductsListViewController.m */; };
+		C86C33C71BEC6A02001B2ECD /* WMLProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */; };
 		C86C33CA1BEC6A02001B2ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86C33C81BEC6A02001B2ECD /* Main.storyboard */; };
 		C86C33CC1BEC6A02001B2ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */; };
 		C86C33CF1BEC6A02001B2ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */; };
@@ -19,12 +19,12 @@
 /* Begin PBXFileReference section */
 		C86C33B91BEC6A02001B2ECD /* WalmartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86C33BD1BEC6A02001B2ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C86C33BF1BEC6A02001B2ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C86C33C01BEC6A02001B2ECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C86C33C21BEC6A02001B2ECD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C86C33C31BEC6A02001B2ECD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C86C33C51BEC6A02001B2ECD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C86C33C61BEC6A02001B2ECD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C86C33BF1BEC6A02001B2ECD /* WMLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLAppDelegate.h; sourceTree = "<group>"; };
+		C86C33C01BEC6A02001B2ECD /* WMLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLAppDelegate.m; sourceTree = "<group>"; };
+		C86C33C21BEC6A02001B2ECD /* WMLProductsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLProductsListViewController.h; sourceTree = "<group>"; };
+		C86C33C31BEC6A02001B2ECD /* WMLProductsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLProductsListViewController.m; sourceTree = "<group>"; };
+		C86C33C51BEC6A02001B2ECD /* WMLProductDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLProductDetailsViewController.h; sourceTree = "<group>"; };
+		C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLProductDetailsViewController.m; sourceTree = "<group>"; };
 		C86C33C91BEC6A02001B2ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86C33CE1BEC6A02001B2ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,12 +61,12 @@
 		C86C33BB1BEC6A02001B2ECD /* WalmartDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C86C33BF1BEC6A02001B2ECD /* AppDelegate.h */,
-				C86C33C01BEC6A02001B2ECD /* AppDelegate.m */,
-				C86C33C21BEC6A02001B2ECD /* MasterViewController.h */,
-				C86C33C31BEC6A02001B2ECD /* MasterViewController.m */,
-				C86C33C51BEC6A02001B2ECD /* DetailViewController.h */,
-				C86C33C61BEC6A02001B2ECD /* DetailViewController.m */,
+				C86C33BF1BEC6A02001B2ECD /* WMLAppDelegate.h */,
+				C86C33C01BEC6A02001B2ECD /* WMLAppDelegate.m */,
+				C86C33C21BEC6A02001B2ECD /* WMLProductsListViewController.h */,
+				C86C33C31BEC6A02001B2ECD /* WMLProductsListViewController.m */,
+				C86C33C51BEC6A02001B2ECD /* WMLProductDetailsViewController.h */,
+				C86C33C61BEC6A02001B2ECD /* WMLProductDetailsViewController.m */,
 				C86C33C81BEC6A02001B2ECD /* Main.storyboard */,
 				C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */,
 				C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */,
@@ -110,6 +110,7 @@
 		C86C33B11BEC6A02001B2ECD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WML;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Aqeel Gunja";
 				TargetAttributes = {
@@ -154,10 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C86C33C11BEC6A02001B2ECD /* AppDelegate.m in Sources */,
-				C86C33C41BEC6A02001B2ECD /* MasterViewController.m in Sources */,
+				C86C33C11BEC6A02001B2ECD /* WMLAppDelegate.m in Sources */,
+				C86C33C41BEC6A02001B2ECD /* WMLProductsListViewController.m in Sources */,
 				C86C33BE1BEC6A02001B2ECD /* main.m in Sources */,
-				C86C33C71BEC6A02001B2ECD /* DetailViewController.m in Sources */,
+				C86C33C71BEC6A02001B2ECD /* WMLProductDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
