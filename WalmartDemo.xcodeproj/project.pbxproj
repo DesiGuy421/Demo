@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C86C33BE1BEC6A02001B2ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33BD1BEC6A02001B2ECD /* main.m */; };
+		C86C33C11BEC6A02001B2ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C01BEC6A02001B2ECD /* AppDelegate.m */; };
+		C86C33C41BEC6A02001B2ECD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C31BEC6A02001B2ECD /* MasterViewController.m */; };
+		C86C33C71BEC6A02001B2ECD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86C33C61BEC6A02001B2ECD /* DetailViewController.m */; };
+		C86C33CA1BEC6A02001B2ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86C33C81BEC6A02001B2ECD /* Main.storyboard */; };
+		C86C33CC1BEC6A02001B2ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */; };
+		C86C33CF1BEC6A02001B2ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C86C33B91BEC6A02001B2ECD /* WalmartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86C33BD1BEC6A02001B2ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C86C33BF1BEC6A02001B2ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C86C33C01BEC6A02001B2ECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C86C33C21BEC6A02001B2ECD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		C86C33C31BEC6A02001B2ECD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		C86C33C51BEC6A02001B2ECD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C86C33C61BEC6A02001B2ECD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C86C33C91BEC6A02001B2ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86C33CE1BEC6A02001B2ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C86C33D01BEC6A02001B2ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C86C33B61BEC6A02001B2ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C86C33B01BEC6A02001B2ECD = {
+			isa = PBXGroup;
+			children = (
+				C86C33BB1BEC6A02001B2ECD /* WalmartDemo */,
+				C86C33BA1BEC6A02001B2ECD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C86C33BA1BEC6A02001B2ECD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C86C33B91BEC6A02001B2ECD /* WalmartDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C86C33BB1BEC6A02001B2ECD /* WalmartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C86C33BF1BEC6A02001B2ECD /* AppDelegate.h */,
+				C86C33C01BEC6A02001B2ECD /* AppDelegate.m */,
+				C86C33C21BEC6A02001B2ECD /* MasterViewController.h */,
+				C86C33C31BEC6A02001B2ECD /* MasterViewController.m */,
+				C86C33C51BEC6A02001B2ECD /* DetailViewController.h */,
+				C86C33C61BEC6A02001B2ECD /* DetailViewController.m */,
+				C86C33C81BEC6A02001B2ECD /* Main.storyboard */,
+				C86C33CB1BEC6A02001B2ECD /* Assets.xcassets */,
+				C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */,
+				C86C33D01BEC6A02001B2ECD /* Info.plist */,
+				C86C33BC1BEC6A02001B2ECD /* Supporting Files */,
+			);
+			path = WalmartDemo;
+			sourceTree = "<group>";
+		};
+		C86C33BC1BEC6A02001B2ECD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C86C33BD1BEC6A02001B2ECD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C86C33B81BEC6A02001B2ECD /* WalmartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86C33D31BEC6A02001B2ECD /* Build configuration list for PBXNativeTarget "WalmartDemo" */;
+			buildPhases = (
+				C86C33B51BEC6A02001B2ECD /* Sources */,
+				C86C33B61BEC6A02001B2ECD /* Frameworks */,
+				C86C33B71BEC6A02001B2ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalmartDemo;
+			productName = WalmartDemo;
+			productReference = C86C33B91BEC6A02001B2ECD /* WalmartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C86C33B11BEC6A02001B2ECD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Aqeel Gunja";
+				TargetAttributes = {
+					C86C33B81BEC6A02001B2ECD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = C86C33B41BEC6A02001B2ECD /* Build configuration list for PBXProject "WalmartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C86C33B01BEC6A02001B2ECD;
+			productRefGroup = C86C33BA1BEC6A02001B2ECD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C86C33B81BEC6A02001B2ECD /* WalmartDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C86C33B71BEC6A02001B2ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86C33CF1BEC6A02001B2ECD /* LaunchScreen.storyboard in Resources */,
+				C86C33CC1BEC6A02001B2ECD /* Assets.xcassets in Resources */,
+				C86C33CA1BEC6A02001B2ECD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C86C33B51BEC6A02001B2ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86C33C11BEC6A02001B2ECD /* AppDelegate.m in Sources */,
+				C86C33C41BEC6A02001B2ECD /* MasterViewController.m in Sources */,
+				C86C33BE1BEC6A02001B2ECD /* main.m in Sources */,
+				C86C33C71BEC6A02001B2ECD /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C86C33C81BEC6A02001B2ECD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86C33C91BEC6A02001B2ECD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C86C33CD1BEC6A02001B2ECD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86C33CE1BEC6A02001B2ECD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C86C33D11BEC6A02001B2ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C86C33D21BEC6A02001B2ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C86C33D41BEC6A02001B2ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WalmartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aqeel.WalmartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C86C33D51BEC6A02001B2ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WalmartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aqeel.WalmartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C86C33B41BEC6A02001B2ECD /* Build configuration list for PBXProject "WalmartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86C33D11BEC6A02001B2ECD /* Debug */,
+				C86C33D21BEC6A02001B2ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86C33D31BEC6A02001B2ECD /* Build configuration list for PBXNativeTarget "WalmartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86C33D41BEC6A02001B2ECD /* Debug */,
+				C86C33D51BEC6A02001B2ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C86C33B11BEC6A02001B2ECD /* Project object */;
+}
