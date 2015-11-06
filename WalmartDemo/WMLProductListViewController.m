@@ -97,8 +97,13 @@ static CGFloat WMLCellAspectRatio = 240.0/220;
     self.detailViewController = (WMLProductDetailsViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
-
-#pragma mark - Segues
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self requestNextPage];
+    self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"])

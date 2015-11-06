@@ -42,6 +42,7 @@ static NSString *isNetworkActivityInProgressKey = @"isNetworkActivityInProgress"
     
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+//    splitViewController.preferredPrimaryColumnWidthFraction = 0.5;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
